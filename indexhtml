@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenland Box - Votre pause rapide, 100% healthy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
+        
+        :root {
+            --green-primary: #557d2a;
+            --green-light: #f1f8e9;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .brand-font {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+        }
+
+        .bg-brand { background-color: var(--green-primary); }
+        .text-brand { color: var(--green-primary); }
+        .bg-light { background-color: var(--green-light); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-12 h-12 bg-brand rounded-full flex items-center justify-center text-white">
+                        <i class="fas fa-leaf text-2xl"></i>
+                    </div>
+                    <span class="text-2xl font-bold text-brand tracking-tight">Greenland Box</span>
+                </div>
+                <div class="hidden md:flex space-x-8 font-medium">
+                    <a href="#home" class="hover:text-brand transition">Accueil</a>
+                    <a href="#concept" class="hover:text-brand transition">Concept</a>
+                    <a href="#menu" class="hover:text-brand transition">Nos Plats</a>
+                    <a href="#recrutement" class="bg-brand text-white px-4 py-2 rounded-lg hover:opacity-90 transition">Recrutement</a>
+                </div>
+                <button class="md:hidden text-2xl" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t p-4 space-y-4">
+            <a href="#home" class="block py-2 hover:text-brand">Accueil</a>
+            <a href="#concept" class="block py-2 hover:text-brand">Concept</a>
+            <a href="#menu" class="block py-2 hover:text-brand">Nos Plats</a>
+            <a href="#recrutement" class="block py-2 text-brand font-bold">Recrutement</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl lg:text-6xl font-bold leading-tight mb-6">
+                        Mangez <span class="text-brand">Sain</span>,<br>Vivez <span class="text-brand">Mieux</span>.
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                        Greenland Box est votre escale gourmande à Rabat. Des repas équilibrés, naturels et préparés chaque jour avec passion pour une pause 100% healthy.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#menu" class="bg-brand text-white px-8 py-4 rounded-xl font-bold shadow-lg hover:shadow-xl transition flex items-center">
+                            Découvrir le menu <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <div class="flex items-center space-x-2 text-gray-500 italic">
+                            <i class="fas fa-truck text-brand"></i>
+                            <span>Livraison rapide à Hay Riad</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 lg:mt-0 relative">
+                    <div class="absolute -top-10 -left-10 w-64 h-64 bg-green-200/50 rounded-full blur-3xl"></div>
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=1000" alt="[Image d'un bol de salade fraîche]" class="rounded-[2rem] shadow-2xl relative z-10 w-full object-cover h-[400px] lg:h-[500px]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Concept Section -->
+    <section id="concept" class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Pourquoi choisir Greenland Box ?</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto italic">Votre bien-être commence dans votre assiette.</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition text-center">
+                    <div class="w-16 h-16 bg-brand/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-carrot text-brand text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">100% Naturel</h3>
+                    <p class="text-gray-500">Ingrédients locaux et biologiques sélectionnés avec soin auprès de nos producteurs marocains.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition text-center border-b-4 border-brand">
+                    <div class="w-16 h-16 bg-brand/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-seedling text-brand text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Écoresponsable</h3>
+                    <p class="text-gray-500">Nous réduisons activement l'usage des plastiques et privilégions des emballages recyclables.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition text-center">
+                    <div class="w-16 h-16 bg-brand/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-clock text-brand text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-xl mb-3">Service Rapide</h3>
+                    <p class="text-gray-500">Idéal pour les déjeuners de bureau ou les pauses rapides sans compromis sur la qualité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Gallery -->
+    <section id="menu" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-bold">Nos Créations</h2>
+                    <p class="text-gray-600">Préparés frais tous les matins.</p>
+                </div>
+                <div class="hidden sm:block">
+                    <span class="text-brand font-semibold underline cursor-pointer">Voir toute la carte</span>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Plat 1 -->
+                <div class="group overflow-hidden rounded-2xl bg-white shadow-lg">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&q=80&w=600" alt="[Image du bol saumon quinoa]" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Bowl Saumon & Quinoa</h3>
+                        <p class="text-sm text-gray-500 mb-4">Saumon grillé, quinoa tricolore, avocat, edamame et tomates cerises.</p>
+                        <span class="text-brand font-bold text-xl">85 MAD</span>
+                    </div>
+                </div>
+                <!-- Plat 2 -->
+                <div class="group overflow-hidden rounded-2xl bg-white shadow-lg">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=600" alt="[Image du Vegan Power Bowl]" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Vegan Power Bowl</h3>
+                        <p class="text-sm text-gray-500 mb-4">Patate douce rôtie, haricots noirs, maïs, avocat et riz basmati.</p>
+                        <span class="text-brand font-bold text-xl">65 MAD</span>
+                    </div>
+                </div>
+                <!-- Plat 3 -->
+                <div class="group overflow-hidden rounded-2xl bg-white shadow-lg">
+                    <div class="h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&q=80&w=600" alt="[Image du Poké Poulet Grillé]" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg mb-2">Poké Poulet Grillé</h3>
+                        <p class="text-sm text-gray-500 mb-4">Poulet mariné, œuf mollet, avocat et tomates fraîches sur lit de verdure.</p>
+                        <span class="text-brand font-bold text-xl">75 MAD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recrutement Section -->
+    <section id="recrutement" class="py-20 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <div>
+                    <span class="bg-brand text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-widest">Nous Recrutons</span>
+                    <h2 class="text-4xl font-bold mt-6 mb-8">Rejoignez l'aventure Greenland Box</h2>
+                    <p class="text-gray-400 mb-8 leading-relaxed">
+                        En pleine expansion au Maroc, nous cherchons des talents passionnés par la restauration et le service client pour renforcer nos équipes à Rabat.
+                    </p>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center shrink-0">
+                                <i class="fas fa-map-marker-alt text-brand"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Lieu</h4>
+                                <p class="text-gray-400">Hay Riad, Rabat</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-white/10 rounded-lg flex items-center justify-center shrink-0">
+                                <i class="fas fa-file-contract text-brand"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Contrat</h4>
+                                <p class="text-gray-400">CDI (Temps complet)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Job Post Card -->
+                <div class="bg-white text-gray-800 rounded-3xl p-8 shadow-2xl relative">
+                    <div class="absolute -top-4 -right-4 bg-brand text-white px-6 py-2 rounded-full font-bold shadow-lg">
+                        Nouveau
+                    </div>
+                    <h3 class="text-2xl font-bold mb-1 italic brand-font">Maître d’Hôtel</h3>
+                    <p class="text-sm text-brand font-semibold mb-6 uppercase tracking-wider">Responsable du service en salle</p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div>
+                            <h4 class="font-bold flex items-center text-sm uppercase text-gray-400 mb-2">
+                                <i class="fas fa-tasks mr-2"></i> Missions Principales
+                            </h4>
+                            <ul class="text-sm space-y-2 text-gray-600 list-disc ml-4">
+                                <li>Accueil et accompagnement des clients</li>
+                                <li>Organisation du plan de salle et réservations</li>
+                                <li>Supervision et motivation de l’équipe</li>
+                                <li>Garant du respect des normes d’hygiène</li>
+                            </ul>
+                        </div>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-gray-50 p-3 rounded-xl">
+                                <h4 class="font-bold text-xs uppercase text-gray-400">Salaire</h4>
+                                <p class="font-bold">6 500 MAD</p>
+                            </div>
+                            <div class="bg-gray-50 p-3 rounded-xl">
+                                <h4 class="font-bold text-xs uppercase text-gray-400">Début</h4>
+                                <p class="font-bold">Janvier 2026</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border-t pt-6">
+                        <p class="text-xs text-gray-400 mb-4 italic">Postulez par email : recrutement@greenlandbox.ma</p>
+                        <button onclick="window.location.href='mailto:recrutement@greenlandbox.ma'" class="w-full bg-brand text-white py-4 rounded-xl font-bold hover:bg-opacity-90 transition">
+                            Envoyer mon CV & LM
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t py-12">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center space-x-2 mb-6 md:mb-0">
+                <div class="w-10 h-10 bg-brand rounded-full flex items-center justify-center text-white">
+                    <i class="fas fa-leaf text-xl"></i>
+                </div>
+                <span class="text-xl font-bold text-brand">Greenland Box</span>
+            </div>
+            <div class="flex space-x-8 text-sm text-gray-500">
+                <a href="#" class="hover:text-brand">Mentions légales</a>
+                <a href="#" class="hover:text-brand">Confidentialité</a>
+                <a href="#" class="hover:text-brand">Partenariats</a>
+            </div>
+            <div class="flex space-x-4 mt-6 md:mt-0">
+                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-brand hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-brand hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 text-gray-600 hover:bg-brand hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <p class="text-center text-xs text-gray-400 mt-8">© 2025 Greenland Box Maroc - Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
